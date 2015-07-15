@@ -5,35 +5,30 @@
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
-		<h1 style="text-align:center">Walroos Clicker v0.1</h1>
+		<h1 style="text-align:center">Walrus Clicker v0.1</h1>
 	</head>
 
 	<body>
-		<h1>Click on the button below to generate Walroos dollars.</h1>
-		<p>Walroos makes paper using paper mache. Walroos sells paper for a living so she can afford to eat lots of chocolate and ice cream. Walroos lives in Walroosland, where the currency is known as "Walroos Dollars." Every click will earn you 1 Walroos Dollar.</p>
+		<h1>Click on the button below to generate Walrus dollars.</h1>
+		<p>Walrus sells paper for a living so she can afford to eat lots of chocolate and ice cream. Walrus lives in Walrusland, where the currency is known as Walrus Dollars (W$) Every click will earn you W$1.</p>
 	
-		<button style="font-size:200%;margin-left:auto;margin-right:auto;display:block;margin-top:3%;margin-bottom:0%" onClick="paperClick(1)">Paper!</button>
+		<button onClick="paperClick(1)">Paper!</button>
+		<button onClick="droolClick(1)">Drool!</button>
+		<button onClick="employeeClick(1)">Buy Employees!</button>
+		
+		<table>
+			<tr><th>Currency</th><th>Value</th>
+			<tr><td>W$:</td><td><span id="paperFixed">0</span></td></tr>
+			<tr><td>Icecream:</td><td><span id="icecream">0</span></td></tr>
+			<tr><td>Drool:</td><td><span id="droolFixed">0</span></td></tr>
+			<tr><td>Employees:</td><td><span id="employee">0</span></td></tr>
+			
+		<p>Buy 1 Icecream with W$10!</p>
 		<br />
-		Walroos Dollars: <span id="paper">0</span>
-		<br />
-		<br />
-		<br />
-		<br />
-		<p>Buy 1 Icecream with 10 Walroos Dollars!
-		<button style="font-size:200%;margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%" onClick="icecreamClick(1)">Ice Cream!</button>
-		<br />
-		Icecream: <span id="icecream">0</span>
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		Obtain 10 icereams to win!
+		<button onClick="icecreamClick(1)">Ice Cream!</button>
 		<br />
 		<br />
-		<br />
-		<span id="winmessage">YOU WIN! WALROOSA!!!!!!!!</span>
+		<span id="winmessage">YOU WIN!!!!!!!!!</span>
 		
 		
 		<script type="text/javascript" src="main.js"></script>
