@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+
+<div class="navigation">
+<ul>
+<li><a href="http://google.com/" target="_blank">home</a></li>
+<li><a href="http://google.com/" target="_blank">about</a></li>
+<li><a href="http://google.com/" target="_blank">tutors</a></li>
+<li><a href="http://google.com/" target="_blank">students</a></li>
+<li><a href="http://google.com/" target="_blank">contact us</a></li>
+</ul>
+</div><!--navigation-->
+
 	<body style="background-color:lightblue">
 
 	<head>
@@ -13,6 +24,7 @@
 		<p>Walrus sells paper for a living so she can afford to eat lots of chocolate and ice cream. Walrus lives in Walrusland, where the currency is known as Walrus Dollars (W$) Every click will earn you W$1.</p>
 	
 		<button onClick="paperClick(1)">Paper!</button>
+		<button onClick="icecreamClick(1)">Ice Cream!</button>
 		<button onClick="droolClick(1)">Drool!</button>
 		<button onClick="employeeClick(1)">Buy Employees!</button>
 		
@@ -23,13 +35,18 @@
 			<tr><td>Drool:</td><td><span id="droolFixed">0</span></td></tr>
 			<tr><td>Employees:</td><td><span id="employee">0</span></td></tr>
 			
-		<p>Buy 1 Icecream with W$10!</p>
-		<br />
-		<button onClick="icecreamClick(1)">Ice Cream!</button>
-		<br />
-		<br />
-		<span id="winmessage">YOU WIN!!!!!!!!!</span>
+		<div class="prompter">
+			<p><span id="prompt">"prompt"</span></p>
+		</div>
+
 		
+		<div class ="prompter2">
+			<p><span id="prompt2"></span></p>
+		</div>
+		
+		<div class ="winmessenger">
+			<p><span id="winmessage">YOU WIN!!!!!!!!!</span></p>
+		</div>
 		
 		<script type="text/javascript" src="main.js"></script>
 	</body>
