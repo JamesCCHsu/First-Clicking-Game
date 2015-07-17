@@ -59,15 +59,20 @@ window.setInterval(function() {
    }
 }, 1);
 
-var droolDecay = 0.05
+var droolDecay = 0.01
 window.setInterval(function() {
 	if (drool > 0.01){
 		drool = drool - droolDecay;
-		drool = drool + (0.005*icecream);
+		drool = drool + (0.001*icecream);
+		droolFixed = drool.toFixed(2);
+		document.getElementById("droolFixed").innerHTML = droolFixed;
+	if (drool <= 0.01) {
+		drool = 0;
 		droolFixed = drool.toFixed(2);
 		document.getElementById("droolFixed").innerHTML = droolFixed;
 	}
-}, 100);
+	}
+}, 30);
 
 var droolEmployee = 0.1
 window.setInterval(function() {
