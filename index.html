@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html>
 
+<div class="""
 <div class="navigation">
-<ul>
-<li><a href="http://google.com/" target="_blank">home</a></li>
-<li><a href="http://google.com/" target="_blank">about</a></li>
-<li><a href="http://google.com/" target="_blank">tutors</a></li>
-<li><a href="http://google.com/" target="_blank">students</a></li>
-<li><a href="http://google.com/" target="_blank">contact us</a></li>
-</ul>
+	<ul>
+		<li id="navlist"><a href="http://google.com/" target="_blank">home</a></li> |
+		<li id="navlist"><a href="http://google.com/" target="_blank">wiki</a></li> |
+		<li id="navlist"><a href="http://google.com/" target="_blank">about</a></li> |
+		<li id="navlist"><a href="http://google.com/" target="_blank">version</a></li> |
+		<li id="navlist"><a href="http://google.com/" target="_blank">contact us</a></li>
+	</ul>
 </div><!--navigation-->
 
-	<body style="background-color:lightblue">
+<span id="versiontracker">v0.4, last updated 7/15/2015</span>
+
+<hr>
+
+	<body style="background-color:white">
 
 	<head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="interface.css" />
-		<h1 style="text-align:center">Walrus Clicker v0.1</h1>
+		<h1 style="text-align:center">Walrus Clicker v0.4</h1>
 	</head>
 
 	<body>
-		<h1>Click on the button below to generate Walrus dollars.</h1>
-		<p>Walrus sells paper for a living so she can afford to eat lots of chocolate and ice cream. Walrus lives in Walrusland, where the currency is known as Walrus Dollars (W$) Every click will earn you W$1.</p>
+		<h1>You are a Walrus, Walrus the walrus.</h1>
+		<p>Walrus sells paper for a living so she can afford to eat lots of chocolate and ice cream. Walrus lives in Walrusland, where the currency is known as Walrus Dollars (W$) Every paper will earn you W$1.</p>
 	
-		<button onClick="paperClick(1)">Paper!</button>
-		<button onClick="icecreamClick(1)">Ice Cream!</button>
-		<button onClick="droolClick(1)">Drool!</button>
-		<button onClick="employeeClick(1)">Buy Employees!</button>
-		
-		<table>
+	<span class="inliner">
+	
+	<table class="currencytracker">
 			<tr><th>Currency</th><th>Value</th>
 			<tr><td>W$:</td><td><span id="paperFixed">0</span></td></tr>
 			<tr><td>Icecream:</td><td><span id="icecream">0</span></td></tr>
 			<tr><td>Drool:</td><td><span id="droolFixed">0</span></td></tr>
 			<tr><td>Employees:</td><td><span id="employee">0</span></td></tr>
+	</table>
+	
+	<div class="mainbuttons">
+		Main Office
+		</br>
+		</br>
+		<button onClick="paperClick(1)">Make Paper!</button>
+		<button onClick="icecreamClick(1)">Buy 1 Icecream</button>
+		<button onClick="droolClick(1)">Drool...</button>
+		<button onClick="employeeClick(1)">Hire 1 Employee</button>
+	</div>
+		
+	<div class="scrollable">
+		<tr><b>Walrus' Helpful Log: Keep Track Of Your Progress</b></tr>
+		</br>
+		<ul class="loglist">
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+			<li>lorem ipsum</li>
+		</ul>
+	</div>
+	
+	</span>
+	
+
 			
 		<div class="prompter">
 			<p><span id="prompt">"prompt"</span></p>
@@ -41,7 +87,7 @@
 
 		
 		<div class ="prompter2">
-			<p><span id="prompt2"></span></p>
+			<p><span id="prompt2">prompt2</span></p>
 		</div>
 		
 		<div class ="winmessenger">
